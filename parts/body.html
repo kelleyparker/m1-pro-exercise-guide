@@ -1,0 +1,37 @@
+<body>
+<div id="app">
+  <header class="topbar" id="topbar">
+    <a class="brand" id="brandBtn" href="#/lib" aria-label="M1 Pro Form Guide - Library">
+      <svg class="brand-ic" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="24" width="7" height="16" rx="2" fill="var(--accent)"/><rect x="49" y="24" width="7" height="16" rx="2" fill="var(--accent)"/><rect x="16" y="19" width="6" height="26" rx="2" fill="currentColor"/><rect x="42" y="19" width="6" height="26" rx="2" fill="currentColor"/><rect x="22" y="29.5" width="20" height="5" rx="2.5" fill="currentColor"/></svg>
+      <span class="brand-txt"><b>M1&#8202;PRO</b><i>FORM GUIDE</i></span>
+    </a>
+    <div class="search-wrap" id="searchWrap">
+      <svg class="search-ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="search" type="search" placeholder="Search exercises, muscles, cues" aria-label="Search exercises" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <span class="result-count" id="resultCount" aria-live="polite"></span>
+    </div>
+    <nav class="top-nav" id="topnav" aria-label="Sections"></nav>
+    <div class="top-actions">
+      <button class="iconbtn" id="themeBtn" aria-label="Switch theme"></button>
+      <button class="iconbtn" id="settingsBtn" aria-label="Settings"></button>
+    </div>
+  </header>
+
+  <div class="layout" id="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Filters and navigation">
+      <button class="sheet-grip" data-closesheet aria-label="Close filters"><span></span></button>
+      <div class="sidebar-inner" id="sidebarInner"></div>
+    </aside>
+    <main class="main" id="main" tabindex="-1"></main>
+  </div>
+
+  <button class="fab" id="filterFab" aria-label="Filters" hidden></button>
+  <nav class="bottombar" id="bottombar" aria-label="Sections"></nav>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <section class="detail" id="detail" hidden role="dialog" aria-modal="true" aria-label="Exercise detail"></section>
+  <div class="modal-wrap" id="settingsWrap" hidden role="dialog" aria-modal="true" aria-label="Settings">
+    <div class="modal" id="settingsModal"></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</div>
